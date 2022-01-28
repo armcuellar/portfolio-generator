@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 // create the about section
 const generateAbout = aboutText => {
     if (!aboutText) {
@@ -61,7 +59,6 @@ module.exports = templateData => {
 
     // destructure projects and about data from templateData based on their property key names
     const { projects, about, ...header } = templateData;
-    console.log(projects, about, header);
 
     return `
 <!DOCTYPE html>
